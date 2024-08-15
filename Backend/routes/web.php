@@ -38,3 +38,8 @@ Route::middleware([
     Route::get('/login/linkedin', [loginController::class, 'redirectToLinkedin'])->name('linkedin.login');
 
     Route::get('/login/linkedin/callback', [loginController::class, 'handleLinkedinCallback']);
+    
+// FACEBOOK
+    Route::get('/login/facebook', [loginController::class, 'redirectToFacebook'])->name('facebook.login');
+
+    Route::get('/login/facebook/callback', [loginController::class, 'handleFacebookCallback']);

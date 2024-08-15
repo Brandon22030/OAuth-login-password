@@ -147,7 +147,7 @@ const submit = () => {
         <div class="flex items-center justify-center mt-4 text-white">
             <a :href="route('google.login')" class=" hover:text-black">
                 <PrimaryButton
-                    class="gap-4 bg-red-600 hover:bg-white hover:border-2 hover:text-black rounded-full"
+                    class="gap-4 bg-red-600 hover:bg-white hover:border-2 hover:border-black hover:text-black rounded-full"
                 >
                     <svg
                         width="2rem"
@@ -206,7 +206,7 @@ const submit = () => {
 
         <!-- OAUTH FACEBOOK -->
         <div class="flex items-center justify-center mt-4">
-            <a :href="route('github.login')">
+            <a :href="route('facebook.login')">
                 <PrimaryButton
                     class="gap-4 bg-blue-600 hover:bg-blue-800 rounded-full"
                 >

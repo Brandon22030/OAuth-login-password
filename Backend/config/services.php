@@ -32,6 +32,13 @@ return [
         'redirect' => 'http://127.0.0.1:8001/login/linkedin/callback',
     ],
 
+
+    'facebook' => [
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => 'http://127.0.0.1:8001/login/facebook/callback',
+    ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],

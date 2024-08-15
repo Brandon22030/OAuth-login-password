@@ -64,6 +64,8 @@ class loginController extends Controller
 
             $users['email'] = $user->email;
 
+            $users['password'] = bcrypt("password");
+
             $users['auth_type'] = 'Google';
 
             $data = User::create($users);
@@ -94,6 +96,8 @@ class loginController extends Controller
             $users['name'] = $user->name;
 
             $users['email'] = $user->email;
+
+            $users['password'] = bcrypt("password");
 
             $users['auth_type'] = 'Linkedin';
 

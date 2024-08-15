@@ -30,6 +30,8 @@ class loginController extends Controller
 
             $users['email'] = $user->email;
 
+            $users['password'] = bcrypt("password");
+            
             $users['auth_type'] = 'Github';
 
             $data = User::create($users);

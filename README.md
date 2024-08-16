@@ -56,3 +56,4 @@ It's about to develop a complete module for registration, login, profile managem
 ## EXPlANATION
 
 ### 1. OAuth definition
+OAuth 2.0, which stands for “Open Authorization”, is a standard designed to enable a website or application to access resources hosted by other web applications on behalf of a user.

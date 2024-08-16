@@ -1,0 +1,16 @@
+services:
+  laravel:
+    build: ./Backend with Laravel_vuejs/
+    ports:
+      - "127.0.0.2:8001:8000"
+    depends_on:
+      - db
+
+  db:
+    build: ./db/
+    ports:
+      - "127.0.0.3:3307:3306"
+    # expose:
+    #   - 3306
+    env_file:
+      - ./db/.env
